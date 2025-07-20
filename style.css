@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(125,21,75);
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(74,6,37);
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li button {
+    background-color: #ffffff;
+    border: 1px solid rgb(125,21,75);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: rgb(125,21,75);
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-image: url('whackAMole.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.menu {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    margin-top: 0;
+}
+
+#gameBoard {
+    display: grid;
+    place-items: center;
+    gap: 5px;
+    height: 100%;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#gameBoard div {
+    background-color: rgb(125,21,75);
+    border: 1px solid #333;
+    border-radius: 5px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

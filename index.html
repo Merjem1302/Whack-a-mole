@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whack-a-Mole PMF Edition</title>
+</head>
+<body>
+    <header>
+        <h1>Whack-a-Mole: PMF Edition</h1>
+        <nav>
+            <ul>
+                <li><button onclick="showMenu('novaIgra')">Nova igra</button></li>
+                <li><button onclick="showMenu('upute')">Upute</button></li>
+                <li><button onclick="showMenu('oProjektu')">O projektu</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="novaIgra" class="menu" style="display: none;">
+            <h2>Nova igra</h2>
+            <p>Izaberite dimenzije table:</p>
+            <button onclick="startGame(4)">4x4</button>
+            <button onclick="startGame(5)">5x5</button>
+            <button onclick="startGame(6)">6x6</button>
+            <div id="gameBoard"></div>
+            <p id="score">Score: 0</p>
+            <p id="timer">Time: 30s</p>
+        </section>
+        <section id="upute" class="menu" style="display: none;">
+            <h2>Upute</h2>
+            <p>Kliknite na slike koje iskaču da biste sakupili bodove:</p>
+            <ul style="list-style: none;">
+                <li>Završni ispit: +20 bodova</li>
+                <li>Projekat: +10 bodova</li>
+                <li>Test: +5 bodova</li>
+                <li>Bonus1: +50 bodova</li>
+                <li>Bonus2: +5 sekundi</li>
+                <li>Pad ispita 1: -30 bodova</li>
+                <li>Pad ispita 2: Restartovanje bodova na 0</li>
+            </ul>
+            <p>Igra traje 30 sekundi. Bonusi se mogu pojaviti najviše dva puta!</p>
+        </section>
+        <section id="oProjektu" class="menu" style="display: none;">
+            <h2>O projektu</h2>
+            <p><strong>Predmet:</strong> Web programiranje</p>
+            <p><strong>Profesor:</strong> Doc. dr. Sead Delalić</p>
+            <p><strong>Asistent:</strong> Iman Bekkaye</p>
+            <p><strong>Studij:</strong> I ciklus, TKN</p>
+            <p><strong>Fakultet:</strong> Prirodno-matematički fakultet</p>
+            <p><strong>Autor:</strong> Merjem Mehmedović</p>
+            <p><strong>Kontakt:</strong> merjemm1302@gmail.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prirodno-matematički fakultet</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- linkovi stranica
+1.https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+
+2. https://www.w3schools.com/howto/howto_js_countdown.asp
+
+3. https://www.freecodecamp.org/news/how-to-create-a-countdown-timer/
+ -->
